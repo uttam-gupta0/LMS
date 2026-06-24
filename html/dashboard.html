@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - LMS</title>
+<link rel="stylesheet" href="sample1.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>LMS</h2>
+        <a href="/html/dashboard.html">Dashboard</a>
+        <a href="#">Courses</a>
+        <a href="#">Assignments</a>
+        <a href="#">Profile</a>
+        <a href="#">Resume ATS Checker</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- TOP BAR -->
+        <div class="top-bar">
+            <h2 id="welcomeText" class="welcome-text">👋 Welcome</h2>
+
+            <div class="top-actions">
+                <button onclick="toggleTheme()" class="btn small dark-toggle">🌙</button>
+                <button onclick="logout()" class="btn small logout-btn">Logout</button>
+            </div>
+        </div>
+
+        <!-- COURSES -->
+        <h3>My Courses</h3>
+
+        <div class="courses">
+
+            <!-- AI COURSE -->
+            <div class="course-card">
+                <h3>Artificial Intelligence</h3>
+
+                <div id="player1"></div>
+
+                <p>Video Progress: <span id="p1">0%</span></p>
+
+                <div class="progress-bar">
+                    <div id="bar1" class="progress"></div>
+                </div>
+
+                <p id="aiProgressText">Course Progress: 0%</p>
+
+                <div class="progress-bar">
+                    <div id="aiProgressBar" class="progress"></div>
+                </div>
+            </div>
+
+            <!-- DIP COURSE -->
+            <div class="course-card">
+                <h3>Digital Image Processing</h3>
+
+                <video id="video2" controls width="100%">
+                    <source src="sample-video.mp4" type="video/mp4">
+                </video>
+
+                <p>Video Progress: <span id="p2">0%</span></p>
+
+                <div class="progress-bar">
+                    <div id="bar2" class="progress"></div>
+                </div>
+
+                <p id="dipProgressText">Course Progress: 0%</p>
+
+                <div class="progress-bar">
+                    <div id="dipProgressBar" class="progress"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- LOWER SECTION -->
+        <div class="bottom-section">
+
+            <div class="box">
+                <h3>Pending Assignments</h3>
+                <ul id="pendingList"></ul>
+            </div>
+
+            <div class="box">
+                <h3>Recent Activity</h3>
+                <ul id="activityList"></ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script type="module" src="/js/dashboard.js"></script>
+
+</body>
+</html> 
+

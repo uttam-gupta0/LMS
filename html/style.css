@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    margin: 0;
+    padding: 0;
+}
+
+/* Center container */
+.container {
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Title */
+.title {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* Card box */
+.card {
+    background: white;
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Welcome text */
+.welcome {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+.nav-links {
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #2a5298;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Form */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Forgot password */
+.forgot {
+    text-align: right;
+    font-size: 12px;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: #2a5298;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Primary button */
+.primary {
+    background: #2a5298;
+    color: white;
+}
+
+.primary:hover {
+    background: #1e3c72;
+}
+
+/* Secondary button */
+.secondary {
+    background: #ccc;
+}
+
+.secondary:hover {
+    background: #999;
+}
+.para {
+    text-align: justify;
+    line-height: 1.6;   /* space between lines */
+    font-size: 16px;
+    margin-top: 1px;
+    margin-bottom: 1%;
+}
+/* FIX GAP BETWEEN WELCOME AND PARAGRAPH */
+legend h3 {
+    margin: 0;
+}
+
+legend {
+    margin-bottom: 2px;
+    padding: 0;
+}
